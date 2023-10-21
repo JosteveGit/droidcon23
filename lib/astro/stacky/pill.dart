@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class Pill extends StatefulWidget {
   final double width;
   final double height;
+  final Color color;
   const Pill({
     super.key,
-    this.width = 50,
-    this.height = 5,
+    this.width = 40,
+    this.height = 3,
+   required this.color,
   });
 
   @override
@@ -20,7 +22,7 @@ class _PillState extends State<Pill> {
       width: widget.width,
       height: widget.height,
       decoration: BoxDecoration(
-        color: Colors.grey.shade300,
+        color: widget.color,
         borderRadius: BorderRadius.circular(10),
       ),
     );
