@@ -1,4 +1,6 @@
+import 'package:droidcon23/astro/stacky/astro.animate.dart';
 import 'package:droidcon23/astro/stacky/astro.stack.dart';
+import 'package:droidcon23/nike/nike_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const AstroStackPage(),
+      home: const NikePage(),
     );
   }
 }

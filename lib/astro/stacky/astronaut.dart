@@ -8,6 +8,7 @@ class Astronaut extends StatelessWidget {
     return Image.asset(
       'assets/images/astronaut1.png',
       width: 300,
+      height: 300,
     );
   }
 }
