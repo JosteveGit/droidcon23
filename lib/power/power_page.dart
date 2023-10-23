@@ -124,7 +124,17 @@ class _PowerPageState extends State<PowerPage> {
                   height: double.maxFinite,
                   padding: const EdgeInsets.all(20),
                   child: Column(
-                    children: [Text("Lorem" * 100)],
+                    children: [
+                      Text("Lorem" * 100),
+                      ElevatedButton(
+                        onPressed: () {
+                          setState(() {
+                            hasTappedLearnMore = !hasTappedLearnMore;
+                          });
+                        },
+                        child: const Text("Close"),
+                      ),
+                    ],
                   ),
                 ),
               ),
