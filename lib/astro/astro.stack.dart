@@ -398,9 +398,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                     curve: Curves.easeInOut,
                     child: Center(
                       child: GestureDetector(
-                        onTap: () {
-                          print("happy pres");
-                        },
+                        onTap: () {},
                         child: AnimatedDefaultTextStyle(
                           style: TextStyle(
                             fontSize: onReadMore ? 16 : 12,
@@ -627,7 +625,6 @@ class _AstroStackPageState extends State<AstroStackPage>
                 curve: Curves.easeInOut,
                 child: GestureDetector(
                   onTap: () {
-                    print("hi");
                     setState(() {
                       onReadMore = false;
                     });
