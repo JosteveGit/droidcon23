@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class PositionedAnimation extends StatefulWidget {
-  const PositionedAnimation({super.key});
+class AnimatedPositionedExample extends StatefulWidget {
+  const AnimatedPositionedExample({super.key});
 
   @override
-  State<PositionedAnimation> createState() => _PositionedAnimationState();
+  State<AnimatedPositionedExample> createState() =>
+      _AnimatedPositionedExampleState();
 }
 
-class _PositionedAnimationState extends State<PositionedAnimation> {
+class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
   bool move = false;
   @override
   Widget build(BuildContext context) {

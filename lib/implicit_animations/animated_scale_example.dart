@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ScaleAnimation extends StatefulWidget {
-  const ScaleAnimation({super.key});
+class AnimatedScaleExample extends StatefulWidget {
+  const AnimatedScaleExample({super.key});
 
   @override
-  State<ScaleAnimation> createState() => _ScaleAnimationState();
+  State<AnimatedScaleExample> createState() => _AnimatedScaleExampleState();
 }
 
-class _ScaleAnimationState extends State<ScaleAnimation> {
+class _AnimatedScaleExampleState extends State<AnimatedScaleExample> {
   bool scaledUp = false;
   @override
   Widget build(BuildContext context) {
@@ -36,4 +36,3 @@ class _ScaleAnimationState extends State<ScaleAnimation> {
     );
   }
 }
-

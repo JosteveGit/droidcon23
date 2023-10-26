@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class FadeAnimation extends StatefulWidget {
-  const FadeAnimation({super.key});
+class AnimatedOpacityExample extends StatefulWidget {
+  const AnimatedOpacityExample({super.key});
 
   @override
-  State<FadeAnimation> createState() => _FadeAnimationState();
+  State<AnimatedOpacityExample> createState() => _AnimatedOpacityExampleState();
 }
 
-class _FadeAnimationState extends State<FadeAnimation> {
+class _AnimatedOpacityExampleState extends State<AnimatedOpacityExample> {
   bool hide = false;
   @override
   Widget build(BuildContext context) {

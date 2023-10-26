@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class TextAnimation extends StatefulWidget {
-  const TextAnimation({super.key});
+class AnimatedTextExample extends StatefulWidget {
+  const AnimatedTextExample({super.key});
 
   @override
-  State<TextAnimation> createState() => _TextAnimationState();
+  State<AnimatedTextExample> createState() => _AnimatedTextExampleState();
 }
 
-class _TextAnimationState extends State<TextAnimation> {
+class _AnimatedTextExampleState extends State<AnimatedTextExample> {
   bool animate = false;
   @override
   Widget build(BuildContext context) {
