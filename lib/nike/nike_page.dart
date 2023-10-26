@@ -64,7 +64,7 @@ class _NikePageState extends State<NikePage> {
                 children: [
                   const SizedBox(height: 100),
                   Transform.translate(
-                    offset: const Offset(80, -45),
+                    offset: const Offset(40, -45),
                     child: Transform.rotate(
                       angle: -0.5,
                       child: Image.asset(
@@ -101,7 +101,7 @@ class _NikePageState extends State<NikePage> {
                             .rotate(end: -0.5)
                             .moveX(end: -2000),
                         Positioned(
-                          right: 80,
+                          right: 100,
                           top: -50,
                           child: Image.asset(
                             "assets/images/nike_air.png",
@@ -132,7 +132,7 @@ class _NikePageState extends State<NikePage> {
                             curve: Curves.easeInCubic,
                           ),
                       Transform.translate(
-                        offset: const Offset(70, 0),
+                        offset: const Offset(0, 0),
                         child: const NikeLogo(),
                       ),
                       Expanded(

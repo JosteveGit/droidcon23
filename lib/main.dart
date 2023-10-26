@@ -1,9 +1,17 @@
 import 'package:droidcon23/astro/stacky/astro.animate.dart';
 import 'package:droidcon23/astro/stacky/astro.stack.dart';
+import 'package:droidcon23/astro/stacky/astro.stack_initial.dart';
+import 'package:droidcon23/flutter_animate/move_animation.dart';
+import 'package:droidcon23/implicit_animations/fade_animation.dart';
+import 'package:droidcon23/implicit_animations/position_animation.dart';
+import 'package:droidcon23/implicit_animations/scale_animation.dart';
 import 'package:droidcon23/nike/nike_page.dart';
 import 'package:droidcon23/power/power_page.dart';
+import 'package:droidcon23/power/power_page_initial.dart';
 import 'package:droidcon23/rockets/rockets_page.dart';
 import 'package:flutter/material.dart';
+
+import 'implicit_animations/text_animation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const RocketsPage(),
+      home: const NikePage(),
     );
   }
 }

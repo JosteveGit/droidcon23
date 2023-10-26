@@ -12,6 +12,7 @@ class _RocketsPageState extends State<RocketsPage> {
   final controller = ScrollController();
   @override
   Widget build(BuildContext context) {
+    Animate.restartOnHotReload = true;
     return Scaffold(
       backgroundColor: const Color(0xFF0D0D0D),
       body: SafeArea(
@@ -32,24 +33,30 @@ class _RocketsPageState extends State<RocketsPage> {
                       fontWeight: FontWeight.w200,
                     ),
                   )
-                      .animate(
-                        adapter: ScrollAdapter(controller),
-                      )
+                      .animate()
                       .rotate(
                         begin: 0,
                         end: -0.2,
+                        duration: 3.seconds,
                       )
                       .moveX(
                         begin: 0,
                         end: 150,
+                        duration: 3.seconds,
                       )
-                      .scaleXY(end: 1.6)
+                      .scaleXY(
+                        end: 1.6,
+                        duration: 3.seconds,
+                      )
                       .moveY(
                         begin: 700,
                         end: 0,
+                        duration: 3.seconds,
                       )
-                      .shimmer()
-                      .shake(hz: 5),
+                      .shake(
+                        hz: 5,
+                        duration: 3.seconds,
+                      ),
                   const SizedBox(width: 10),
                   const Text(
                     "Rockets",
