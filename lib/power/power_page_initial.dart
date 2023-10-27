@@ -20,18 +20,27 @@ class _PowerPageInitialState extends State<PowerPageInitial> {
           height: double.maxFinite,
           child: Stack(
             children: [
-              const Center(
-                child: Icon(
-                  Icons.lightbulb,
-                  size: 150,
-                  color: Colors.orange,
+              AnimatedScale(
+                scale: hasTappedLearnMore ? 0 : 1,
+                duration: const Duration(milliseconds: 500),
+                child: AnimatedOpacity(
+                  opacity: hasTappedLearnMore ? 0 : 1,
+                  duration: const Duration(milliseconds: 500),
+                  child: const Center(
+                    child: Icon(
+                      Icons.lightbulb,
+                      size: 150,
+                      color: Colors.orange,
+                    ),
+                  ),
                 ),
               ),
-              const Positioned(
+              AnimatedPositioned(
                 left: 0,
                 right: 0,
-                top: 500,
-                child: Center(
+                top: hasTappedLearnMore ? 80 : 500,
+                duration: const Duration(milliseconds: 500),
+                child: const Center(
                   child: Text(
                     "Power Ledger",
                     style: TextStyle(
@@ -42,47 +51,60 @@ class _PowerPageInitialState extends State<PowerPageInitial> {
                   ),
                 ),
               ),
-              const Positioned(
-                left: 0,
-                right: 0,
-                top: 550,
-                child: Center(
-                  child: Text(
-                    "Create our energy future together",
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white,
-                    ),
-                  ),
-                ),
-              ),
               Positioned(
                 left: 0,
                 right: 0,
-                top: 700,
-                child: Center(
-                  child: OutlinedButton(
-                    onPressed: () {
-                      setState(() {
-                        hasTappedLearnMore = !hasTappedLearnMore;
-                      });
-                    },
-                    child: const Text(
-                      "LEARN MORE",
-                      style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.white,
+                top: 550,
+                child: AnimatedScale(
+                  scale: hasTappedLearnMore ? 0 : 1,
+                  duration: const Duration(milliseconds: 500),
+                  child: AnimatedOpacity(
+                    opacity: hasTappedLearnMore ? 0 : 1,
+                    duration: const Duration(milliseconds: 500),
+                    child: const Center(
+                      child: Text(
+                        "Create our energy future together",
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
               Positioned(
-                top: 1000,
                 left: 0,
                 right: 0,
+                top: hasTappedLearnMore ? 80 : 700,
+                child: AnimatedOpacity(
+                  opacity: hasTappedLearnMore ? 0 : 1,
+                  duration: const Duration(milliseconds: 500),
+                  child: Center(
+                    child: OutlinedButton(
+                      onPressed: () {
+                        setState(() {
+                          hasTappedLearnMore = !hasTappedLearnMore;
+                        });
+                      },
+                      child: const Text(
+                        "LEARN MORE",
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              AnimatedPositioned(
+                top: hasTappedLearnMore ? 120 : 1000,
+                left: 0,
+                right: 0,
+                duration: const Duration(milliseconds: 500),
                 child: Container(
                   color: Colors.white,
                   height: double.maxFinite,

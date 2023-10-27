@@ -22,14 +22,26 @@ class _AnimatedScaleExampleState extends State<AnimatedScaleExample> {
       ),
       body: SafeArea(
         child: Center(
-          child: AnimatedScale(
-            scale: scaledUp ? 2 : 1,
-            duration: const Duration(seconds: 1),
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue,
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                "Animated Scale",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              AnimatedScale(
+                scale: scaledUp ? 2 : 1,
+                duration: const Duration(seconds: 1),
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  color: Colors.blue,
+                ),
+              ),
+            ],
           ),
         ),
       ),

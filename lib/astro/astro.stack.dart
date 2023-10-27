@@ -103,6 +103,7 @@ class _AstroStackPageState extends State<AstroStackPage>
               ),
 
               // ASTRONAUT.
+              // The astronaut scales in.
               Positioned(
                 top: 290,
                 left: 0,
@@ -118,6 +119,7 @@ class _AstroStackPageState extends State<AstroStackPage>
               ),
 
               //EARTH.
+              // The earth moves down.
               AnimatedPositioned(
                 top: draggedMoonDown
                     ? 820
@@ -173,7 +175,8 @@ class _AstroStackPageState extends State<AstroStackPage>
                 ),
               ),
 
-              //CONTROLLERS.
+              //ARROWS.
+              //The arrows fades out.
               Positioned(
                 bottom: 120,
                 left: 0,
@@ -187,6 +190,7 @@ class _AstroStackPageState extends State<AstroStackPage>
               ),
 
               // WHEEL.
+              //The wheel fades out.
               Positioned(
                 bottom: -180,
                 left: 0,
@@ -202,6 +206,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                 ),
               ),
 
+              // The “EARTH” text fades out as it moves down
               AnimatedPositioned(
                 bottom: draggedMoonDown
                     ? 20
@@ -246,6 +251,8 @@ class _AstroStackPageState extends State<AstroStackPage>
                   ),
                 ),
               ),
+
+              // The pill under the “Earth” text fades out.
               Positioned(
                 bottom: 55,
                 left: 0,
@@ -260,6 +267,8 @@ class _AstroStackPageState extends State<AstroStackPage>
                   ),
                 ),
               ),
+
+              // The other information and read more fade out as they move down
               AnimatedPositioned(
                 bottom: draggedMoonDown
                     ? -10
@@ -307,6 +316,7 @@ class _AstroStackPageState extends State<AstroStackPage>
               ),
 
               //MOON.
+              // The moon scales out as it moves up.
               AnimatedPositioned(
                 top: onReadMore
                     ? 30
@@ -376,6 +386,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                   ),
                 ),
               ),
+              // The “MOON” text becomes bigger as it moves up.
               AnimatedPositioned(
                 top: onReadMore
                     ? 20
@@ -417,6 +428,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                   ),
                 ),
               ),
+              // The pill under the moon fades out.
               AnimatedPositioned(
                 top: insideAstronaut ? 367 : 257,
                 left: 0,
@@ -444,6 +456,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                   ),
                 ),
               ),
+              // Other information, read more and the indicators fade out.
               AnimatedPositioned(
                 bottom: delayedDagMoonDown ? 40 : -100,
                 left: 0,
@@ -492,6 +505,7 @@ class _AstroStackPageState extends State<AstroStackPage>
               ),
 
               // INDICATOR.
+              // The indicator switches
               Positioned(
                 left: 0,
                 right: 0,
@@ -529,6 +543,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                 ),
               ),
 
+              // A white container moves up.
               AnimatedPositioned(
                 top: onReadMore ? 70 : 1000,
                 left: 0,
@@ -618,6 +633,7 @@ class _AstroStackPageState extends State<AstroStackPage>
                 ),
               ),
 
+              //A back button moves from left to right.
               AnimatedPositioned(
                 top: 20,
                 left: onReadMore ? 20 : -50,

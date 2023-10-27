@@ -2,7 +2,9 @@ import 'package:droidcon23/astro/astro.stack.dart';
 import 'package:droidcon23/implicit_animations/animated_opacity_example.dart';
 import 'package:droidcon23/implicit_animations/animated_positioned_example.dart';
 import 'package:droidcon23/implicit_animations/animated_scale_example.dart';
-import 'package:droidcon23/power/power_page_initial.dart';
+import 'package:droidcon23/nike/nike_page.dart';
+import 'package:droidcon23/power/power_page.dart';
+import 'package:droidcon23/rockets/rockets_page.dart';
 import 'package:flutter/material.dart';
 import 'implicit_animations/animated_text_example.dart';
 
@@ -23,14 +25,15 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: [
-        const AnimatedScaleExample(),
-        const AnimatedPositionedExample(),
         const AnimatedOpacityExample(),
+        const AnimatedPositionedExample(),
+        const AnimatedScaleExample(),
         const AnimatedTextExample(),
-        //4
-        const PowerPageInitial(),
+        const PowerPage(),
         const AstroStackPage(),
-      ][1],
+        const RocketsPage(),
+        const NikePage()
+      ][0],
     );
   }
 }

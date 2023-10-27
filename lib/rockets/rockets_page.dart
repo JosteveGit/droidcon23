@@ -22,9 +22,9 @@ class _RocketsPageState extends State<RocketsPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const Row(
+              Row(
                 children: [
-                  Text(
+                  const Text(
                     "🚀",
                     style: TextStyle(
                       color: Colors.white,
@@ -32,33 +32,33 @@ class _RocketsPageState extends State<RocketsPage> {
                       fontStyle: FontStyle.italic,
                       fontWeight: FontWeight.w200,
                     ),
-                  ),
-                  // .animate()
-                  // .rotate(
-                  //   begin: 0,
-                  //   end: -0.2,
-                  //   duration: 3.seconds,
-                  // )
-                  // .moveX(
-                  //   begin: 0,
-                  //   end: 150,
-                  //   duration: 3.seconds,
-                  // )
-                  // .scaleXY(
-                  //   end: 1.6,
-                  //   duration: 3.seconds,
-                  // )
-                  // .moveY(
-                  //   begin: 700,
-                  //   end: 0,
-                  //   duration: 3.seconds,
-                  // )
-                  // .shake(
-                  //   hz: 5,
-                  //   duration: 3.seconds,
-                  // ),
-                  SizedBox(width: 10),
-                  Text(
+                  )
+                      .animate(adapter: ScrollAdapter(controller))
+                      .rotate(
+                        begin: 0,
+                        end: -0.2,
+                        duration: 3.seconds,
+                      )
+                      .moveX(
+                        begin: 0,
+                        end: 150,
+                        duration: 3.seconds,
+                      )
+                      .scaleXY(
+                        end: 1.6,
+                        duration: 3.seconds,
+                      )
+                      .moveY(
+                        begin: 700,
+                        end: 0,
+                        duration: 3.seconds,
+                      )
+                      .shake(
+                        hz: 5,
+                        duration: 3.seconds,
+                      ),
+                  const SizedBox(width: 10),
+                  const Text(
                     "Rockets",
                     style: TextStyle(
                       color: Colors.white,

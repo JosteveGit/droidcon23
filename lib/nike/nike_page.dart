@@ -72,13 +72,13 @@ class _NikePageState extends State<NikePage> {
                         height: 250,
                       ),
                     ),
-                  ),
-                  // .animate(
-                  //   adapter: ScrollAdapter(controller, end: 5000),
-                  // )
-                  // .moveY(end: -2000)
-                  // .rotate(end: -0.5)
-                  // .moveX(end: 2000),
+                  )
+                      .animate(
+                        adapter: ScrollAdapter(controller, end: 5000),
+                      )
+                      .moveY(end: -2000)
+                      .rotate(end: -0.5)
+                      .moveX(end: 2000),
                   const SizedBox(height: 90),
                   Center(
                     child: Stack(
@@ -93,25 +93,25 @@ class _NikePageState extends State<NikePage> {
                               height: 250,
                             ),
                           ),
-                        ),
-                        // .animate(
-                        //   adapter: ScrollAdapter(controller, end: 8000),
-                        // )
-                        // .moveY(end: -2000)
-                        // .rotate(end: -0.5)
-                        // .moveX(end: -2000),
-                        Positioned(
-                            right: 100,
-                            top: -50,
-                            child: Image.asset(
-                              "assets/images/nike_air.png",
-                              height: 150,
+                        )
+                            .animate(
+                              adapter: ScrollAdapter(controller, end: 8000),
                             )
-                            // .animate(
-                            //   adapter: ScrollAdapter(controller, end: 2000),
-                            // )
-                            // .moveY(end: -2000, curve: Curves.easeOut),
-                            ),
+                            .moveY(end: -2000)
+                            .rotate(end: -0.5)
+                            .moveX(end: -2000),
+                        Positioned(
+                          right: 100,
+                          top: -50,
+                          child: Image.asset(
+                            "assets/images/nike_air.png",
+                            height: 150,
+                          )
+                              .animate(
+                                adapter: ScrollAdapter(controller, end: 2000),
+                              )
+                              .moveY(end: -2000, curve: Curves.easeOut),
+                        ),
                       ],
                     ),
                   ),
@@ -122,15 +122,15 @@ class _NikePageState extends State<NikePage> {
                       Image.asset(
                         "assets/images/wearing_nike1.png",
                         height: 550,
-                      ),
-                      // .animate(
-                      //   adapter: ScrollAdapter(controller, end: 1000),
-                      // )
-                      // .moveY(
-                      //   end: 140,
-                      //   begin: 500,
-                      //   curve: Curves.easeInCubic,
-                      // ),
+                      )
+                          .animate(
+                            adapter: ScrollAdapter(controller, end: 1000),
+                          )
+                          .moveY(
+                            end: 140,
+                            begin: 500,
+                            curve: Curves.easeInCubic,
+                          ),
                       Transform.translate(
                         offset: const Offset(0, 0),
                         child: const NikeLogo(),
@@ -141,113 +141,113 @@ class _NikePageState extends State<NikePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              const BigText("TUMBLED"),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1000,
-                              //   ),
-                              // )
-                              // .moveX(end: -180),
-                              const BigText("LEATHER."),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1000,
-                              //   ),
-                              // )
-                              // .moveX(
-                              //   begin: -500,
-                              //   end: 0,
-                              //   curve: Curves.easeInOut,
-                              // ),
-                              const BigText("PREMIUM"),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1000,
-                              //   ),
-                              // )
-                              // .moveX(
-                              //   begin: -700,
-                              //   end: 0,
-                              // ),
-                              const BigText("CANVAS."),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1000,
-                              //   ),
-                              // )
-                              // .moveX(end: -200),
+                              const BigText("TUMBLED")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1000,
+                                    ),
+                                  )
+                                  .moveX(end: -180),
+                              const BigText("LEATHER.")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1000,
+                                    ),
+                                  )
+                                  .moveX(
+                                    begin: -500,
+                                    end: 0,
+                                    curve: Curves.easeInOut,
+                                  ),
+                              const BigText("PREMIUM")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1000,
+                                    ),
+                                  )
+                                  .moveX(
+                                    begin: -700,
+                                    end: 0,
+                                  ),
+                              const BigText("CANVAS.")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1000,
+                                    ),
+                                  )
+                                  .moveX(end: -200),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  const BigText("EASY"),
-                                  // .animate(
-                                  //   adapter: ScrollAdapter(
-                                  //     controller,
-                                  //     end: 1000,
-                                  //   ),
-                                  // )
-                                  // .moveX(
-                                  //   end: -220,
-                                  //   curve: Curves.easeOut,
-                                  // ),
+                                  const BigText("EASY")
+                                      .animate(
+                                        adapter: ScrollAdapter(
+                                          controller,
+                                          end: 1000,
+                                        ),
+                                      )
+                                      .moveX(
+                                        end: -220,
+                                        curve: Curves.easeOut,
+                                      ),
                                   const BigText("TO")
-                                  // .animate(
-                                  //   adapter: ScrollAdapter(
-                                  //     controller,
-                                  //     end: 1000,
-                                  //   ),
-                                  // )
-                                  // .moveX(
-                                  //   begin: -200,
-                                  //   end: 0,
-                                  //   curve: Curves.easeOut,
-                                  // ),
+                                      .animate(
+                                        adapter: ScrollAdapter(
+                                          controller,
+                                          end: 1000,
+                                        ),
+                                      )
+                                      .moveX(
+                                        begin: -200,
+                                        end: 0,
+                                        curve: Curves.easeOut,
+                                      ),
                                 ],
                               ),
-                              const BigText("STYLE"),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1400,
-                              //   ),
-                              // )
-                              // .moveX(
-                              //   begin: -200,
-                              //   end: -100,
-                              //   curve: Curves.easeOut,
-                              // ),
-                              const BigText("COLORS."),
-                              // .animate(
-                              //   adapter: ScrollAdapter(
-                              //     controller,
-                              //     end: 1400,
-                              //   ),
-                              // )
-                              // .moveX(
-                              //   begin: -200,
-                              //   end: -95,
-                              //   curve: Curves.easeOut,
-                              // ),
+                              const BigText("STYLE")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1400,
+                                    ),
+                                  )
+                                  .moveX(
+                                    begin: -200,
+                                    end: -100,
+                                    curve: Curves.easeOut,
+                                  ),
+                              const BigText("COLORS.")
+                                  .animate(
+                                    adapter: ScrollAdapter(
+                                      controller,
+                                      end: 1400,
+                                    ),
+                                  )
+                                  .moveX(
+                                    begin: -200,
+                                    end: -95,
+                                    curve: Curves.easeOut,
+                                  ),
                               const SizedBox(height: 100),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const LeftController(),
-                                  // .animate(
-                                  //   adapter: ScrollAdapter(
-                                  //     controller,
-                                  //     end: 1200,
-                                  //   ),
-                                  // )
-                                  // .moveX(
-                                  //   begin: -200,
-                                  //   end: -10,
-                                  //   curve: Curves.easeOut,
-                                  // ),
+                                  const LeftController()
+                                      .animate(
+                                        adapter: ScrollAdapter(
+                                          controller,
+                                          end: 1200,
+                                        ),
+                                      )
+                                      .moveX(
+                                        begin: -200,
+                                        end: -10,
+                                        curve: Curves.easeOut,
+                                      ),
                                   const RightController(),
                                   const SizedBox(width: 100),
                                   const Text(
@@ -257,13 +257,13 @@ class _NikePageState extends State<NikePage> {
                                       fontSize: 20,
                                     ),
                                   )
-                                  // .animate(
-                                  //   adapter: ScrollAdapter(
-                                  //     controller,
-                                  //     end: 1800,
-                                  //   ),
-                                  // )
-                                  // .fadeIn(),
+                                      .animate(
+                                        adapter: ScrollAdapter(
+                                          controller,
+                                          end: 1800,
+                                        ),
+                                      )
+                                      .fadeIn(),
                                 ],
                               )
                             ],
@@ -312,11 +312,11 @@ class _NikePageState extends State<NikePage> {
                             ],
                           ),
                         ),
-                      ),
-                      // .animate(
-                      //   adapter: ScrollAdapter(controller, end: 3500),
-                      // )
-                      // .fadeIn(),
+                      )
+                          .animate(
+                            adapter: ScrollAdapter(controller, end: 3500),
+                          )
+                          .fadeIn(),
                       Stack(
                         children: [
                           Container(
@@ -325,16 +325,16 @@ class _NikePageState extends State<NikePage> {
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.white),
                             ),
-                          ),
-                          // .animate(
-                          //   adapter: ScrollAdapter(controller, end: 2500),
-                          // )
-                          // .move(
-                          //   end: const Offset(20, 20),
-                          //   curve: Curves.easeOut,
-                          //   duration: 2000.ms,
-                          //   delay: 1500.ms,
-                          // ),
+                          )
+                              .animate(
+                                adapter: ScrollAdapter(controller, end: 2500),
+                              )
+                              .move(
+                                end: const Offset(20, 20),
+                                curve: Curves.easeOut,
+                                duration: 2000.ms,
+                                delay: 1500.ms,
+                              ),
                           Image.asset(
                             "assets/images/wearing_nike2.png",
                             height: 320,
@@ -417,130 +417,130 @@ class _NikePageState extends State<NikePage> {
                                   "AF1",
                                   fontStyle: FontStyle.italic,
                                 )
-                                    // .animate(
-                                    //   adapter: ScrollAdapter(
-                                    //     controller,
-                                    //     end: 2800,
-                                    //   ),
-                                    // )
-                                    // .moveX(
-                                    //   delay: 1000.ms,
-                                    //   end: 200,
-                                    //   curve: Curves.easeInOut,
-                                    // ),
+                                    .animate(
+                                      adapter: ScrollAdapter(
+                                        controller,
+                                        end: 2800,
+                                      ),
+                                    )
+                                    .moveX(
+                                      delay: 1000.ms,
+                                      end: 200,
+                                      curve: Curves.easeInOut,
+                                    ),
                               ],
                             ),
-                            const BigText("MAKES"),
-                                // .animate(
-                                //   adapter: ScrollAdapter(controller, end: 2800),
-                                // )
-                                // .moveX(
-                                //   delay: 1900.ms,
-                                //   end: 0,
-                                //   begin: 200,
-                                //   curve: Curves.easeInOut,
-                                // ),
+                            const BigText("MAKES")
+                                .animate(
+                                  adapter: ScrollAdapter(controller, end: 2800),
+                                )
+                                .moveX(
+                                  delay: 1900.ms,
+                                  end: 0,
+                                  begin: 200,
+                                  curve: Curves.easeInOut,
+                                ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                const BigText("A"),
-                                    // .animate(
-                                    //   adapter: ScrollAdapter(
-                                    //     controller,
-                                    //     end: 2800,
-                                    //   ),
-                                    // )
-                                    // .moveX(
-                                    //   delay: 1900.ms,
-                                    //   end: -155,
-                                    //   begin: 0,
-                                    //   curve: Curves.easeInOut,
-                                    // ),
+                                const BigText("A")
+                                    .animate(
+                                      adapter: ScrollAdapter(
+                                        controller,
+                                        end: 2800,
+                                      ),
+                                    )
+                                    .moveX(
+                                      delay: 1900.ms,
+                                      end: -155,
+                                      begin: 0,
+                                      curve: Curves.easeInOut,
+                                    ),
                                 const BigText("SUBDUED"),
                               ],
                             ),
-                            const BigText("STATEMENT,"),
-                                // .animate(
-                                //   adapter: ScrollAdapter(
-                                //     controller,
-                                //     end: 2800,
-                                //   ),
-                                // )
-                                // .moveX(
-                                //   delay: 1900.ms,
-                                //   end: 140,
-                                //   begin: 0,
-                                //   curve: Curves.easeInOut,
-                                // ),
-                            const BigText("ADDING"),
-                                // .animate(
-                                //   adapter: ScrollAdapter(controller, end: 2800),
-                                // )
-                                // .moveX(
-                                //   delay: 2500.ms,
-                                //   end: 0,
-                                //   begin: 200,
-                                //   curve: Curves.easeInOut,
-                                // ),
-                            const BigText("THE PERFECT"),
-                                // .animate(
-                                //   adapter: ScrollAdapter(controller, end: 2840),
-                                // )
-                                // .moveX(
-                                //   delay: 2500.ms,
-                                //   end: 0,
-                                //   begin: 200,
-                                //   curve: Curves.easeInOut,
-                                // ),
+                            const BigText("STATEMENT,")
+                                .animate(
+                                  adapter: ScrollAdapter(
+                                    controller,
+                                    end: 2800,
+                                  ),
+                                )
+                                .moveX(
+                                  delay: 1900.ms,
+                                  end: 140,
+                                  begin: 0,
+                                  curve: Curves.easeInOut,
+                                ),
+                            const BigText("ADDING")
+                                .animate(
+                                  adapter: ScrollAdapter(controller, end: 2800),
+                                )
+                                .moveX(
+                                  delay: 2500.ms,
+                                  end: 0,
+                                  begin: 200,
+                                  curve: Curves.easeInOut,
+                                ),
+                            const BigText("THE PERFECT")
+                                .animate(
+                                  adapter: ScrollAdapter(controller, end: 2840),
+                                )
+                                .moveX(
+                                  delay: 2500.ms,
+                                  end: 0,
+                                  begin: 200,
+                                  curve: Curves.easeInOut,
+                                ),
                             Row(
                               children: [
                                 const BigText("POLISH"),
-                                const BigText("TO"),
-                                    // .animate(
-                                    //   adapter: ScrollAdapter(
-                                    //     controller,
-                                    //     end: 2850,
-                                    //   ),
-                                    // )
-                                    // .moveX(
-                                    //   delay: 2500.ms,
-                                    //   end: 180,
-                                    //   curve: Curves.easeInOut,
-                                    // ),
+                                const BigText("TO")
+                                    .animate(
+                                      adapter: ScrollAdapter(
+                                        controller,
+                                        end: 2850,
+                                      ),
+                                    )
+                                    .moveX(
+                                      delay: 2500.ms,
+                                      end: 180,
+                                      curve: Curves.easeInOut,
+                                    ),
                               ],
                             ),
-                            const BigText("YOUR 'FIT"),
-                                // .animate(
-                                //   adapter: ScrollAdapter(controller, end: 2890),
-                                // )
-                                // .moveX(
-                                //   delay: 3500.ms,
-                                //   end: 200,
-                                //   begin: 100,
-                                //   curve: Curves.easeInOut,
-                                // ),
+                            const BigText("YOUR 'FIT")
+                                .animate(
+                                  adapter: ScrollAdapter(controller, end: 2890),
+                                )
+                                .moveX(
+                                  delay: 3500.ms,
+                                  end: 200,
+                                  begin: 100,
+                                  curve: Curves.easeInOut,
+                                ),
                           ],
                         ),
                       ),
                       Image.asset(
                         "assets/images/last_shoe2.png",
                         height: 300,
-                      ),
-                          // .animate(
-                          //   adapter: ScrollAdapter(controller, end: 2800),
-                          // )
-                          // .rotate(
-                          //   begin: 0.9,
-                          //   end: 0,
-                          //   delay: 3500.ms,
-                          // )
-                          // .moveY(
-                          //   delay: 3500.ms,
-                          //   end: 300,
-                          //   begin: 0,
-                          //   curve: Curves.easeInOut,
-                          // ),
+                      )
+                          .animate(
+                            adapter: ScrollAdapter(controller, end: 2800),
+                          )
+                          .rotate(
+                            begin: 0.9,
+                            end: 0,
+                            delay: 3500.ms,
+                          )
+                          .moveY(
+                            delay: 3500.ms,
+                            end: 300,
+                            begin: 0,
+                            curve: Curves.easeInOut,
+                          ),
                     ],
                   ),
                   const SizedBox(height: 100),

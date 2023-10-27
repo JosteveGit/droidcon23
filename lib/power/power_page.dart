@@ -20,6 +20,7 @@ class _PowerPageState extends State<PowerPage> {
           height: double.maxFinite,
           child: Stack(
             children: [
+              // The light bulb fades and scales out.
               AnimatedScale(
                 duration: const Duration(milliseconds: 500),
                 scale: hasTappedLearnMore ? 0 : 1,
@@ -37,6 +38,7 @@ class _PowerPageState extends State<PowerPage> {
                   ),
                 ),
               ),
+              // Power ledger text goes up.
               AnimatedPositioned(
                 left: 0,
                 right: 0,
@@ -56,6 +58,7 @@ class _PowerPageState extends State<PowerPage> {
                   ),
                 ),
               ),
+              //The subtitle fades and scales out.
               Positioned(
                 left: 0,
                 right: 0,
@@ -81,6 +84,7 @@ class _PowerPageState extends State<PowerPage> {
                   ),
                 ),
               ),
+              //The learn more button fades and scales out.
               Positioned(
                 left: 0,
                 right: 0,
@@ -113,6 +117,7 @@ class _PowerPageState extends State<PowerPage> {
                   ),
                 ),
               ),
+              // A white container comes from the bottom.
               AnimatedPositioned(
                 top: hasTappedLearnMore ? 120 : 1000,
                 left: 0,

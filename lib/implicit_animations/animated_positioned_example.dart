@@ -23,7 +23,15 @@ class _AnimatedPositionedExampleState extends State<AnimatedPositionedExample> {
       ),
       body: SafeArea(
         child: Stack(
+          clipBehavior: Clip.none,
           children: [
+            const Text(
+              "Animated Positioned",
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
             AnimatedPositioned(
               top: move ? 60 : 0,
               right: 0,
